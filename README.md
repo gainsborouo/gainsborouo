@@ -6,9 +6,10 @@ Welcome to my GitHub profile! I'm 周廷威, currently a sophomore studying Comp
 
 ## Experience
 
-* NYCU CS Information Technology Center - Teaching Assistant
+* NYCU CS Information Technology Center - Net, HPC Team Member, Teaching Assistant
+* Meichu Hackathon - Development Department Leader
+* NYCU Google Developer Groups - Frontend Training Program Mentor
 * NYCU CS Student Association - Development Department Member
-* Meichu Hackathon - Development Department Member
 
 ## Contact Information
 
