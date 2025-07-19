@@ -2,14 +2,19 @@
 
 ## About Me
 
-Welcome to my GitHub profile! I'm 周廷威, currently a sophomore studying Computer Science at National Yang Ming Chiao Tung University (NYCU). I have a strong passion for programming and hardware development, constantly striving to enhance my technical skills and software engineering capabilities. My focus lies in designing and optimizing hardware systems to provide efficient and innovative solutions that drive technological advancements.
+Welcome to my GitHub profile! I'm a junior majoring in Computer Science at National Yang Ming Chiao Tung University (NYCU).
+Born and raised in Hsinchu, my taste buds have already been trained to survive the local "food desert" (?)
+
+I enjoy playing badminton, photography, and turning money into things I like.
+I like building stuff, from writing code to working on hardware, and sometimes I randomly pick up side projects.
+
+If you have any interesting ideas, feel free to chat or collaborate with me!
 
 ## Experience
 
-* NYCU CS Information Technology Center - Net, HPC Team Member, Teaching Assistant
-* Meichu Hackathon - Development Department Leader
-* NYCU Google Developer Groups - Frontend Training Program Mentor
-* NYCU CS Student Association - Development Department Member
+* NYCU CS Information Technology Center - Net, HPC, PC, Mail Team Member
+* Meichu Hackathon - Development Department Lead
+* NYCU CS Student Association - Development Department Lead
 
 ## Contact Information
 
