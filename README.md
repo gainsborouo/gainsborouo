@@ -49,10 +49,11 @@ If you have any interesting ideas, feel free to chat or collaborate with me!
 
 ## Contact Information
 
-If you have any questions or concerns, please feel free to contact me. For more personal information and contact details, please refer to my [personal profile](https://profile.userwei.com/).![](https://hit.yhype.me/github/profile?account_id=70355885)
-
 ---
-  
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=gainsborouo&abbreviated=true"/>
-</p>
+
+<div align="center">
+<a href="https://profile.userwei.com"><img src="https://img.shields.io/badge/Personal%20Profile-20304f?style=flat-square&logo=google-chrome&logoColor=white"/></a>
+<a href="mailto:userwei.contact@gmail.com"><img src="https://img.shields.io/badge/userwei.contact%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white"/></a>
+<img src="https://komarev.com/ghpvc/?username=gainsborouo&style=flat-square&abbreviated=true"/>
+<img src="https://hit.yhype.me/github/profile?account_id=70355885" width="1" height="1" style="visibility:hidden;">
+</div>
