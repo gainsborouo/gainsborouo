@@ -12,7 +12,7 @@ If you have any interesting ideas, feel free to chat or collaborate with me!
 
 - NYCU CS Information Technology Center - Net, Mail, PC, HPC Team Member
 - NYCU Center for Institutional Research and Data Analytics - Software Developer
-- Meichu Hackathon - Development Department Lead
+- Meichu Hackathon - Development Team Lead
 - NYCU CS Student Association - Development Department Lead
 
 ## My Stats
