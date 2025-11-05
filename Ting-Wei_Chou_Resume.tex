@@ -21,7 +21,7 @@
 \usepackage{graphicx}
 \usepackage{cfr-lm}
 \usepackage[T1]{fontenc}
-\setlength{\footskip}{4.08003pt} 
+\setlength{\footskip}{4.08003pt}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -69,7 +69,7 @@
 \newcommand{\resumePOR}[3]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
     \end{tabular*}
     \vspace{-2mm}
 }
@@ -133,9 +133,9 @@
 
 \parbox{\dimexpr\linewidth-0.3cm\relax}{
 \begin{tabularx}{\linewidth}{L r} \\
-  \textbf{\Large \name} \\ 
+  \textbf{\Large \name} \\
   {\raisebox{0em}{\footnotesize \faPhone} +886 \phone} & \href{https://github.com/gainsborouo}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {gainsborouo}}\\
-  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize 
+  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize
  \faEnvelope}\ {\emaila}}&\href{https://www.linkedin.com/in/userwei}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Ting-Wei Chou}}
 \end{tabularx}
 }
@@ -144,7 +144,7 @@
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {National Yang Ming Chiao Tung University}{GPA: 4.26, Ranking: 3/196}
+      {National Yang Ming Chiao Tung University}{GPA: 4.25, Ranking: 6/194}
       {Bachelor of Science in Computer Science}{2023 - 2027 (Expected)}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
@@ -157,26 +157,27 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {\href{https://www.linkedin.com/company/nycu-csit/}{NYCU CS Information Technology Center}}{}
-      {Net, HPC, PC Team Member}{July 2024 - Present}
-      \vspace{-2.0mm}
+      {Net, Mail, PC, HPC Team Member}{July 2024 - Present}
       \resumeItemListStart
         \item {Administered and maintained multi-floor network infrastructure with Cisco, Juniper, and EdgeCore switches.}
-        \item {Developed CCNA course materials, covering VLAN, STP, and hands-on projects using Cisco Packet Tracer.}
-        \item {Managed and optimized HPC cluster using Slurm for GPU workload scheduling and resource allocation.}
+        \item {Maintained and optimized the department mail servers using Postfix and Dovecot, serving 10K+ accounts.}
         \item {Maintained and deployed computer lab infrastructure with Proxmox VE and VyOS for network management.}
+        \item {Managed and optimized HPC cluster using Slurm for GPU workload scheduling and resource allocation.}
       \resumeItemListEnd
+      \vspace{-2.0mm}
+
       \resumeSubheading
       {NYCU Computational Photography Lab}{}
       {Research Assistant}{Feburary 2025 - Present}
-      \vspace{-2.0mm}
       \resumeItemListStart
         \item {Advisor: Prof. Yu-Lun Liu}
         \item {Research Topic: In progress}
       \resumeItemListEnd
+      \vspace{-2.0mm}
+
       \resumeSubheading
       {NYCU Computer Architecture System Lab}{}
       {Research Assistant}{July 2024 - Present}
-      \vspace{-2.0mm}
       \resumeItemListStart
         \item {Advisor: Prof. Tsung-Tai Yeh}
         \item {Research Topic: Designing a Bit-Serial RISC-V DNN Accelerator for Ultra-Low-Bit LLM Inference}
@@ -191,24 +192,13 @@
 \resumeSubHeadingListStart
 
     \resumeProject
-    {\href{https://github.com/gainsborouo/ta-source}{TA System}} %Project Name
-    {A system that enables TAs to help students review their homework logs} %Project Name, Location Name
+    {\href{https://github.com/NCTUCSUnion/pastexam}{NYCU CS Past Exams}} %Project Name
+    {A platform providing archived NYCU Computer Science exams and solutions to support more effective exam preparation} %Project Name, Location Name
     {} %Event Dates
-
+    
     \resumeItemListStart
-    \item {Developed a full-stack web application using Vue for the frontend and FastAPI for the backend.}
-    \item {Integrated NYCU OAuth and CSIT OAuth for authentication using OAuth 2.0 with the Authorization Code flow.}
-    \resumeItemListEnd
-    \vspace{-2.0mm}
-
-    \resumeProject
-      {\href{https://github.com/NYCU-Service-Learning/nanao-system}{Pain Interaction System}} %Project Name
-      {A platform for managing and recording pain data effectively} %Project Name, Location Name
-      {} %Event Dates
-
-      \resumeItemListStart
-        \item {Developed a full-stack web application using React for the frontend and NestJS for the backend.}
-        \item {Built CI/CD pipelines to automate deployment from GitHub repositories to Docker Hub images.}
+    \item {Designed, built, and deployed a full-stack exam archive platform serving 1.7K+ users and 5K+ downloads.}
+    \item {Implemented CI/CD pipelines with lint, unit \& e2e tests, build, and deploy for consistent quality and reliability.}
     \resumeItemListEnd
     \vspace{-2.0mm}
 
@@ -247,15 +237,15 @@
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 \resumePOR{Teaching Assistant } % Position
-    {CCNA, Computer Organization} %Club,Event
+    {CCNA, NASA, Computer Organization} %Club,Event
     {Feburary 2025 - Present} %Tenure Period
 \resumePOR{Development Team Leader } % Position
     {\href{https://github.com/Official-Meichu-Hackathon}{Meichu Hackathon}} %Club,Event
-    {November 2024 - Present} %Tenure Period
+    {November 2024 - October 2025} %Tenure Period
 \resumePOR{Frontend Training Program Mentor } % Position
     {\href{https://gdg.community.dev/gdg-on-campus-national-yang-ming-chiao-tung-university-hsinchu-city-taiwan/}{NYCU Google Developer Groups}} %Club,Event
-    {September 2024 - Present} %Tenure Period
-    
+    {September 2024 - June 2025} %Tenure Period
+
 \resumeSubHeadingListEnd
 \vspace{-5mm}
 
@@ -270,13 +260,13 @@
 
 \resumeProject
   {Frameworks}
-  {Bootstrap, FastAPI, Flask, Next.js, Tailwind CSS, Vue}
-  {} 
+  {FastAPI, Flask, Next.js, Tailwind CSS, Vue.js}
+  {}
 
 \resumeProject
   {Tools}
-  {Docker, Git, Hugo, LaTeX, Makefile, Markdown, Nginx, React}
-  {} 
+  {Docker, Git, Hugo, LaTeX, Makefile, Markdown, Nginx}
+  {}
 
 \resumeSubHeadingListEnd
 \vspace{-16pt}
