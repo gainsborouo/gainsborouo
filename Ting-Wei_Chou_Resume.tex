@@ -80,7 +80,7 @@
         \textbf{#1} & \textit{\footnotesize{#4}} \\
         \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
     \end{tabular*}
-    \vspace{-2.4mm}
+    \vspace{-3.4mm}
 }
 
 \newcommand{\resumeProject}[4]{
@@ -104,6 +104,13 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
 \newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\resumeSkill}[2]{%
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l}
+        \textbf{#1}\hspace{1.5mm}#2
+    \end{tabular*}
+    \vspace{-2mm}
+}
 \newcommand{\cvsection}[1]{%
 \vspace{2mm}
 \begin{tcolorbox}
@@ -117,7 +124,7 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
 
 \newcommand{\projectRepo}[2]{%
-  \href{#2}{#1\hspace{1.5mm}{\small\faGithub}}%
+  \href{#2}{#1\hspace{1.5mm}\raisebox{-0.15\height}{\small\faGithub}}%
 }
 %---- End of Packages and Functions ------
 
@@ -162,7 +169,6 @@
         \resumeSubheading
             {\href{https://www.linkedin.com/company/nycu-csit/}{NYCU CS Information Technology Center}}{}
             {Net, Mail, PC, HPC Team Member}{Jul 2024 - Present}
-            \vspace{-1.0mm}
             \resumeItemListStart
                 \item {Administered and maintained multi-floor network infrastructure with Cisco, Juniper, and EdgeCore switches.}
                 \item {Maintained and optimized the department mail servers using Postfix and Dovecot, serving 10K+ accounts.}
@@ -170,21 +176,19 @@
                 \item {Managed and optimized HPC cluster using Slurm for GPU workload scheduling and resource allocation.}
             \resumeItemListEnd
             \vspace{-2.0mm}
-    
+
         \resumeSubheading
             {\href{https://cirda.nycu.edu.tw/cirda/en/index}{NYCU Center for Institutional Research and Data Analytics}}{}
             {Software Developer}{Oct 2025 - Present}
-            \vspace{-1.0mm}
             \resumeItemListStart
                 \item {Maintained and enhanced the NYCU Chatbot (LINE bot) backend.}
                 \item {Designed and implemented the Sustainable Development Goals (SDGs) Search web platform.}
             \resumeItemListEnd
             \vspace{-2.0mm}
-    
+
         \resumeSubheading
             {NYCU Computer Architecture System Lab}{}
             {Research Assistant}{Jul 2024 - Present}
-            \vspace{-1.0mm}
             \resumeItemListStart
                 \item {Advisor: Prof. Tsung-Tai Yeh}
                 \item {Research Topic: Designing a Bit-Serial RISC-V DNN Accelerator for Ultra-Low-Bit LLM Inference}
@@ -204,8 +208,9 @@
         {} %Additional details
         \vspace{-1.0mm}
         \resumeItemListStart
-            \item {Designed, built, and deployed a full-stack exam archive platform serving 1.7K+ users and 5K+ downloads.}
-            \item {Implemented CI/CD pipelines with lint, unit \& e2e tests, build, and deploy for consistent quality and reliability.}
+            \item {Rebuilt the previous exam archive system using Vue, FastAPI, and MinIO, modernizing the platform architecture.}
+            \item {Deployed the platform to a production VPS environment, serving 1.7K+ users with 6K+ downloads.}
+            \item {Implemented CI/CD pipelines with linting, unit \& e2e tests, automated builds and deployment for consistent quality.}
         \resumeItemListEnd
     \vspace{-2.0mm}
 
@@ -229,19 +234,19 @@
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
     \resumePOR{NSTC University Student Research Project} % Award
-        {Awarded research grant (Taiwan)} % Event
+        {Recipient of National Research Grant} % Event
         {Jul 2025 – Feb 2026} %Event Year
     \resumePOR{Department Research Project Competitions Award} % Award
-        {Honorable Mention} % Event
+        {Honorable Mention (Top 10\% of teams)} % Event
         {Jul 2025} %Event Year
     \resumePOR{Academic Achievements Awards} % Award
-        {} % Event
+        {(Ranked 1st in class)} % Event
         {Spring 2024} %Event Year
     \resumePOR{Foundation Academic Course Award} % Award
-        {Digital Circuit Design, Computer Organization} % Event
+        {Digital Circuits \& Computer Organization (Top 5\%)} % Event
         {Spring 2024} %Event Year
-    \resumePOR{Bronze Award} % Award
-        {The 2023 ICPC Asia Taoyuan Regional Programming Contest} % Event
+    \resumePOR{ICPC Asia Taoyuan Regional Programming Contest} % Award
+        {Bronze Award} % Event
         {Oct 2023} %Event Year
 \resumeSubHeadingListEnd
 \vspace{-5mm}
@@ -266,23 +271,11 @@
 %-----------Technical skills-----------------
 \section{\textbf{Technical Skills}}
 \resumeSubHeadingListStart
-\resumeProject
-    {Programming Languages}
-    {C, C++, Java, JavaScript, PHP, Python, Shell Scripting, SQL, Verilog}
-    {}
-    {}
-
-\resumeProject
-    {Frameworks}
-    {FastAPI, Flask, Next.js, Tailwind CSS, Vue.js}
-    {}
-    {}
-
-\resumeProject
-    {Tools}
-    {Docker, Git, Hugo, LaTeX, Makefile, Markdown, Nginx}
-    {}
-    {}
+    \resumeSkill{Languages}{C, C++, Python, JavaScript, Java, SQL, Verilog, Bash}
+    \resumeSkill{Web}{Vue.js, Next.js, Tailwind CSS, FastAPI, Flask}
+    \resumeSkill{Databases \& Storage}{PostgreSQL, MySQL, Redis, MinIO (S3)}
+    \resumeSkill{Systems \& DevOps}{Linux, Docker, Nginx, Proxmox VE, Slurm, Postfix, Dovecot, PowerDNS}
+    \resumeSkill{Tools}{Git, Makefile, LaTeX, Markdown}
 \resumeSubHeadingListEnd
 \vspace{-16pt}
 
