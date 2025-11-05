@@ -115,6 +115,10 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}%
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+\newcommand{\projectRepo}[2]{%
+  \href{#2}{#1\hspace{1.5mm}{\small\faGithub}}%
+}
 %---- End of Packages and Functions ------
 
 %-------------------------------------------
@@ -158,6 +162,7 @@
     \resumeSubheading
       {\href{https://www.linkedin.com/company/nycu-csit/}{NYCU CS Information Technology Center}}{}
       {Net, Mail, PC, HPC Team Member}{July 2024 - Present}
+      \vspace{-1.0mm}
       \resumeItemListStart
         \item {Administered and maintained multi-floor network infrastructure with Cisco, Juniper, and EdgeCore switches.}
         \item {Maintained and optimized the department mail servers using Postfix and Dovecot, serving 10K+ accounts.}
@@ -167,11 +172,12 @@
       \vspace{-2.0mm}
 
       \resumeSubheading
-      {NYCU Computational Photography Lab}{}
-      {Research Assistant}{Feburary 2025 - Present}
+      {\href{https://cirda.nycu.edu.tw/cirda/en/index}{NYCU Center for Institutional Research and Data Analytics}}{}
+      {Software Developer}{October 2025 - Present}
+      \vspace{-1.0mm}
       \resumeItemListStart
-        \item {Advisor: Prof. Yu-Lun Liu}
-        \item {Research Topic: In progress}
+        \item {Maintained and enhanced the NYCU Chatbot (LINE bot) backend.}
+        \item {Designed and implemented the Sustainable Development Goals (SDGs) Search web platform.}
       \resumeItemListEnd
       \vspace{-2.0mm}
 
@@ -192,10 +198,11 @@
 \resumeSubHeadingListStart
 
     \resumeProject
-    {\href{https://github.com/NCTUCSUnion/pastexam}{NYCU CS Past Exams}} %Project Name
-    {A platform providing archived NYCU Computer Science exams and solutions to support more effective exam preparation} %Project Name, Location Name
-    {} %Event Dates
-    
+    {\projectRepo{NYCU CS Past Exams}{https://github.com/NCTUCSUnion/pastexam}} %Project Name
+    {A platform providing archived NYCU Computer Science exams and solutions for efficient exam preparation} %Project Name, Location Name
+    {June 2025 - Present} %Event Dates
+    {} %Additional details
+    \vspace{-1.0mm}
     \resumeItemListStart
     \item {Designed, built, and deployed a full-stack exam archive platform serving 1.7K+ users and 5K+ downloads.}
     \item {Implemented CI/CD pipelines with lint, unit \& e2e tests, build, and deploy for consistent quality and reliability.}
@@ -203,14 +210,15 @@
     \vspace{-2.0mm}
 
     \resumeProject
-      {\href{https://github.com/gainsborouo/NYCU_GDSC-frontend}{GDSC Frontend Training Program}} %Project Name
-      {Comprehensive frontend development educational platform} %Project Name, Location Name
-      {} %Event Dates
-
-      \resumeItemListStart
-      \item {Created and organized the frontend curriculum covering HTML, CSS, JavaScript, and React.}
-      \item {Designed and built exercises to boost student engagement and learning results.}
-      \resumeItemListEnd
+    {\projectRepo{GDSC Frontend Training Program}{https://github.com/gainsborouo/NYCU_GDSC-frontend}} %Project Name
+    {Comprehensive frontend development educational platform} %Project Name, Location Name
+    {} %Event Dates
+    {} %Additional details
+    \vspace{-1.0mm}
+    \resumeItemListStart
+    \item {Created and organized the frontend curriculum covering HTML, CSS, JavaScript, and React.}
+    \item {Designed and built exercises to boost student engagement and learning results.}
+    \resumeItemListEnd
     \vspace{-2.0mm}
 
   \resumeSubHeadingListEnd
@@ -257,15 +265,18 @@
   {Programming Languages}
   {C, C++, Java, JavaScript, PHP, Python, Shell Scripting, SQL, Verilog}
   {}
+  {}
 
 \resumeProject
   {Frameworks}
   {FastAPI, Flask, Next.js, Tailwind CSS, Vue.js}
   {}
+  {}
 
 \resumeProject
   {Tools}
   {Docker, Git, Hugo, LaTeX, Makefile, Markdown, Nginx}
+  {}
   {}
 
 \resumeSubHeadingListEnd
