@@ -47,8 +47,6 @@ If you have any interesting ideas, feel free to chat or collaborate with me!
 </picture>
 </div>
 
-## Contact Information
-
 ---
 
 <div align="center">
