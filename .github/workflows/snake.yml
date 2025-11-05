@@ -9,7 +9,7 @@ on:
     - main
 
 jobs:
-  snake:
+  generate:
     permissions: 
       contents: write
     runs-on: ubuntu-latest
