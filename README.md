@@ -1,19 +1,8 @@
-## About Me
+## About
 
-Welcome to my GitHub profile! I'm a junior majoring in Computer Science at National Yang Ming Chiao Tung University (NYCU).
-Born and raised in Hsinchu, my taste buds have already been trained to survive the local "food desert" (?)
+I'm a third-year undergraduate student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Tsung-Tai Yeh](https://people.cs.nycu.edu.tw/~ttyeh/) and [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/).
 
-I enjoy playing badminton, photography, and turning money into things I like.
-I like building stuff, from writing code to working on hardware, and sometimes I randomly pick up side projects.
-
-If you have any interesting ideas, feel free to chat or collaborate with me!
-
-## Experience
-
-- NYCU CS Information Technology Center - Net, Mail, PC, HPC Team Member
-- NYCU Center for Institutional Research and Data Analytics - Software Developer
-- Meichu Hackathon - Development Team Lead
-- NYCU CS Student Association - Development Department Lead
+For more about me, please visit my [profile](https://profile.userwei.com).
 
 ## My Stats
 
@@ -51,7 +40,7 @@ If you have any interesting ideas, feel free to chat or collaborate with me!
 
 <div align="center">
 <a href="https://profile.userwei.com"><img src="https://img.shields.io/badge/Personal%20Profile-20304f?style=flat-square&logo=google-chrome&logoColor=white"/></a>
-<a href="mailto:userwei.contact@gmail.com"><img src="https://img.shields.io/badge/userwei.contact%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white"/></a>
+<a href="mailto:contact@userwei.com"><img src="https://img.shields.io/badge/contact%40userwei.com-red?style=flat-square&logo=gmail&logoColor=white"/></a>
 <img src="https://komarev.com/ghpvc/?username=gainsborouo&style=flat-square&abbreviated=true"/>
 <img src="https://hit.yhype.me/github/profile?account_id=70355885" width="1" height="1" style="visibility:hidden;">
 </div>
