@@ -131,7 +131,7 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 %%%%%% DEFINE ELEMENTS HERE %%%%%%%
-\newcommand{\name}{Ting-Wei Chou} % Your Name
+\newcommand{\name}{Ting-Wei (Torin) Chou} % Your Name
 \newcommand{\phone}{966523230}
 \newcommand{\emaila}{chou.ting.wei@outlook.com}
 
@@ -155,8 +155,12 @@
 \section{\textbf{Education}}
 \resumeSubHeadingListStart
     \resumeSubheading
-        {National Yang Ming Chiao Tung University}{GPA: 4.26, Ranking: 5/194}
-        {Bachelor of Science in Computer Science}{2023 - 2027 (Expected)}
+        {\href{https://www.nycu.edu.tw/nycu/ch/index}{National Yang Ming Chiao Tung University}}{GPA: 4.27, Ranking: 5/194}
+        {Bachelor of Science in Computer Science}{Sep 2023 - Jun 2027 (Expected)}
+
+    \resumeSubheading
+        {\href{https://www.kth.se/en}{KTH Royal Institute of Technology}}{}
+        {Exchange Student in Electrical Engineering and Computer Science}{Jan 2027 - May 2027 (Expected)}
 \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 %
@@ -167,22 +171,24 @@
 \section{\textbf{Experience}}
     \resumeSubHeadingListStart
         \resumeSubheading
+            {\href{https://www.linkedin.com/company/google}{Google}}{}
+            {Software Engineering Intern}{Jun 2026 - Sep 2026}
+            \resumeItemListStart
+                \item {TBD}
+                \item {TBD}
+                \item {TBD}
+                \item {TBD}
+            \resumeItemListEnd
+            \vspace{-2.0mm}
+
+        \resumeSubheading
             {\href{https://www.linkedin.com/company/nycu-csit/}{NYCU CS Information Technology Center}}{}
-            {Net, Mail, PC, HPC Team Member}{Jul 2024 - Present}
+            {Net, Mail, PC, HPC Team Member}{Jul 2024 - Dec 2026}
             \resumeItemListStart
                 \item {Configured the Computer Science department network across multiple floors using Cisco and Juniper switches.}
                 \item {Maintained and improved the department mail system with Postfix and Dovecot, supporting 10K+ accounts.}
                 \item {Deployed and operated a lab virtualization environment with Proxmox VE and VyOS for system and network services.}
                 \item {Administered the GPU compute cluster with Slurm for research workloads and resource scheduling.}
-            \resumeItemListEnd
-            \vspace{-2.0mm}
-
-        \resumeSubheading
-            {\href{https://cirda.nycu.edu.tw/cirda/en/index}{NYCU Center for Institutional Research and Data Analytics}}{}
-            {Software Developer}{Oct 2025 - Present}
-            \resumeItemListStart
-                \item {Maintained and improved the NYCU Chatbot (LINE bot) backend to support campus administrative services.}
-                \item {Designed and implemented the Sustainable Development Goals Search platform for campus-wide information access.}
             \resumeItemListEnd
             \vspace{-2.0mm}
 
@@ -208,21 +214,9 @@
         {} %Additional details
         \vspace{-1.0mm}
         \resumeItemListStart
-            \item {Deployed and operated the platform on a production VPS, serving 2,000+ users with over 14,000 exam downloads.}
             \item {Re-architected and rebuilt the legacy exam archive into a scalable full-stack system using Vue, FastAPI, and MinIO.}
+            \item {Deployed and operated the platform on a production VPS, serving 3,000+ users with over 28,000 exam downloads.}
             \item {Implemented CI/CD pipelines with linting, unit, and end-to-end tests, enabling automated builds and deployments.}
-        \resumeItemListEnd
-    \vspace{-2.0mm}
-
-    \resumeProject
-        {\projectRepo{GDSC Frontend Training Program}{https://github.com/gainsborouo/NYCU_GDSC-frontend}} %Project Name
-        {Comprehensive frontend development educational platform} %Project Name, Location Name
-        {} %Event Dates
-        {} %Additional details
-        \vspace{-1.0mm}
-        \resumeItemListStart
-            \item {Created and organized the frontend curriculum covering HTML, CSS, JavaScript, and React.}
-            \item {Designed and built exercises to boost student engagement and learning results.}
         \resumeItemListEnd
     \vspace{-2.0mm}
 
@@ -233,15 +227,15 @@
 \section{\textbf{Achievements}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
+    \resumePOR{Academic Achievements Awards} % Award
+        {(Ranked 1st in class)} % Event
+        {Fall 2025, Spring 2024} %Event Year
     \resumePOR{NSTC University Student Research Project} % Award
         {Recipient of National Research Grant} % Event
-        {Jul 2025 – Feb 2026} %Event Year
+        {Jul 2025 - Feb 2026} %Event Year
     \resumePOR{Department Capstone Project Competition} % Award
         {Merit Award (Top 10\%)} % Event
         {Jul 2025} %Event Year
-    \resumePOR{Academic Achievements Awards} % Award
-        {(Ranked 1st in class)} % Event
-        {Spring 2024} %Event Year
     \resumePOR{Foundation Academic Course Award} % Award
         {Digital Circuits \& Computer Organization (Top 5\%)} % Event
         {Spring 2024} %Event Year
@@ -256,7 +250,7 @@
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
     \resumePOR{Teaching Assistant} % Position
-        {CCNA, NASA, Computer Organization} %Club,Event
+        {\href{https://timetable.nycu.edu.tw/?r=main/crsoutline\&Acy=114\&Sem=2\&CrsNo=515612\&lang=zh-tw}{CCNA}, \href{https://timetable.nycu.edu.tw/?r=main/crsoutline\&Acy=113\&Sem=2\&CrsNo=515511\&lang=zh-tw}{Computer Organization}} %Club,Event
         {Feb 2025 - Present} %Tenure Period
     \resumePOR{Development Team Leader} % Position
         {\href{https://github.com/Official-Meichu-Hackathon}{Meichu Hackathon}} %Club,Event
@@ -271,10 +265,10 @@
 %-----------Technical skills-----------------
 \section{\textbf{Technical Skills}}
 \resumeSubHeadingListStart
-    \resumeSkill{Languages}{C, C++, Python, JavaScript, Go, Java, SQL, Verilog, Bash}
-    \resumeSkill{Web}{Vue.js, Next.js, Tailwind CSS, FastAPI, Flask}
+    \resumeSkill{Languages}{C, C++, Python, Java, Kotlin, JavaScript, Go, Verilog, Bash}
+    \resumeSkill{Web}{Vue.js, Next.js, React, Tailwind CSS, FastAPI, Flask}
     \resumeSkill{Databases \& Storage}{PostgreSQL, MySQL, Redis, MinIO (S3)}
-    \resumeSkill{Systems \& DevOps}{Linux, Docker, Nginx, Proxmox VE, Slurm, Postfix, Dovecot, PowerDNS}
+    \resumeSkill{Systems \& DevOps}{Linux, Docker, Kubernetes, Nginx, Proxmox VE, Slurm, Postfix, Dovecot}
     \resumeSkill{Tools}{Git, Makefile, LaTeX, Markdown}
 \resumeSubHeadingListEnd
 \vspace{-16pt}
