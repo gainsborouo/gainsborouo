@@ -5,22 +5,29 @@
 \usepackage{xcolor}
 \usepackage{float}
 \usepackage{ragged2e}
-\usepackage[empty]{fullpage}
-\usepackage{wrapfig}
-\usepackage{lipsum}
 \usepackage{tabularx}
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{marvosym}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
 \usepackage{fancyhdr}
-\usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{graphicx}
-\usepackage{cfr-lm}
-\usepackage[T1]{fontenc}
+% Native Unicode font support for XeLaTeX.  Avoid fi/ff/fl ligatures so
+% ATS text extraction receives the original character sequence.
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[
+  BoldFont       = lmroman10-bold.otf,
+  ItalicFont     = lmroman10-italic.otf,
+  BoldItalicFont = lmroman10-bolditalic.otf,
+  Ligatures      = NoCommon
+]
+\definecolor{linkblue}{RGB}{0,75,150}
+\let\resumehref\href
+\renewcommand{\href}[2]{\resumehref{#1}{\textcolor{linkblue}{\uline{#2}}}}
 \setlength{\footskip}{4.08003pt}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -123,9 +130,6 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
 
-\newcommand{\projectRepo}[2]{%
-  \href{#2}{#1\hspace{1.5mm}\raisebox{-0.15\height}{\small\faGithub}}%
-}
 %---- End of Packages and Functions ------
 
 %-------------------------------------------
@@ -138,16 +142,14 @@
 
 
 \begin{document}
-\fontfamily{cmr}\selectfont
 %----------HEADING-----------------
 
 
 \parbox{\dimexpr\linewidth-0.3cm\relax}{
-\begin{tabularx}{\linewidth}{L r} \\
-  \textbf{\Large \name} \\
-  {\raisebox{0em}{\footnotesize \faPhone} +886 \phone} & \href{https://github.com/gainsborouo}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {gainsborouo}}\\
-  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize
- \faEnvelope}\ {\emaila}}&\href{https://www.linkedin.com/in/userwei}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Ting-Wei Chou}}
+\begin{tabularx}{\linewidth}{L l}
+  \textbf{\LARGE \name} & Homepage: \href{https://profile.userwei.com/}{userwei.com}\\
+  Phone: +886 \phone & GitHub: \href{https://github.com/gainsborouo}{github.com/gainsborouo}\\
+  Email: \href{mailto:\emaila}{\emaila} & LinkedIn: \href{https://www.linkedin.com/in/userwei}{linkedin.com/in/userwei}
 \end{tabularx}
 }
 
@@ -155,11 +157,12 @@
 \section{\textbf{Education}}
 \resumeSubHeadingListStart
     \resumeSubheading
-        {\href{https://www.nycu.edu.tw/nycu/ch/index}{National Yang Ming Chiao Tung University}}{GPA: 4.27, Ranking: 5/194}
+        {National Yang Ming Chiao Tung University}{GPA: 4.27/4.30, Ranking: 5/194 (Top 3\%)}
         {Bachelor of Science in Computer Science}{Sep 2023 - Jun 2027 (Expected)}
+    \vspace{1.5mm}
 
     \resumeSubheading
-        {\href{https://www.kth.se/en}{KTH Royal Institute of Technology}}{}
+        {KTH Royal Institute of Technology}{}
         {Exchange Student in Electrical Engineering and Computer Science}{Jan 2027 - May 2027 (Expected)}
 \resumeSubHeadingListEnd
 \vspace{-5.5mm}
@@ -171,33 +174,35 @@
 \section{\textbf{Experience}}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {\href{https://www.linkedin.com/company/google}{Google}}{}
-            {Software Engineering Intern}{Jun 2026 - Sep 2026}
+            {Google}{New Taipei City, Taiwan}
+            {Software Engineering Intern, Android Jetpack (CameraX)}{Jun 2026 - Sep 2026}
             \resumeItemListStart
-                \item {TBD}
-                \item {TBD}
-                \item {TBD}
-                \item {TBD}
+            \item {Designed and implemented public CameraX APIs, expanding media capture capabilities across the Android ecosystem.}
+            \item {Resolved multi-camera OEM fragmentation by abstracting physical lens topologies into declarative camera selection.}
+            \item {Architected an extensible audio pipeline, supporting low-latency PCM buffer modification and live analysis.}
+            \item {Engineered real-time zoom tracking across dynamic multi-lens transitions and hardened camera and audio stability.}
+
             \resumeItemListEnd
             \vspace{-2.0mm}
 
+
         \resumeSubheading
-            {\href{https://www.linkedin.com/company/nycu-csit/}{NYCU CS Information Technology Center}}{}
-            {Net, Mail, PC, HPC Team Member}{Jul 2024 - Dec 2026}
+            {NYCU CS Information Technology Center}{Hsinchu City, Taiwan}
+            {Team Member, Net, Mail, PC \& HPC}{Jul 2024 - Dec 2026 (Expected)}
             \resumeItemListStart
-                \item {Configured the Computer Science department network across multiple floors using Cisco and Juniper switches.}
-                \item {Maintained and improved the department mail system with Postfix and Dovecot, supporting 10K+ accounts.}
+                \item {Engineered multi-floor VLAN architectures and dynamic routing across Cisco and Juniper enterprise core switches.}
+                \item {Optimized and administered the department mail infrastructure with Postfix and Dovecot, serving 10,000+ accounts.}
                 \item {Deployed and operated a lab virtualization environment with Proxmox VE and VyOS for system and network services.}
-                \item {Administered the GPU compute cluster with Slurm for research workloads and resource scheduling.}
+                \item {Orchestrated Slurm GPU compute clusters and fair-share scheduling, optimizing hardware utilization across labs.}
             \resumeItemListEnd
             \vspace{-2.0mm}
 
         \resumeSubheading
-            {\href{https://github.com/nycu-caslab}{NYCU Computer Architecture System Lab}}{}
-            {Research Assistant}{Jul 2024 - Present}
+            {NYCU Computer Architecture System Lab}{Hsinchu City, Taiwan}
+            {Undergraduate Research Assistant (Advisor: Prof. Tsung-Tai Yeh)}{Jul 2024 - May 2027 (Expected)}
             \resumeItemListStart
-                \item {Advisor: Prof. Tsung-Tai Yeh}
-                \item {Research Topic: Designing a Bit-Serial RISC-V DNN Accelerator for Ultra-Low-Bit LLM Inference}
+                \item {Designed a bit-serial accelerator for 1-2-bit LLM inference, amortizing serialization latency via row-level tiling.}
+                \item {Developed a cycle-level simulator, demonstrating a 3.5x speedup over a 64x64 systolic array baseline.}
             \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-8.5mm}
@@ -208,18 +213,29 @@
 \section{\textbf{Projects}}
 \resumeSubHeadingListStart
     \resumeProject
-        {\projectRepo{NYCU CS Past Exam Platform}{https://github.com/NCTUCSUnion/pastexam}} %Project Name
+        {NYCU CS Past Exam Platform} %Project Name
         {A platform providing archived NYCU Computer Science exams and solutions for efficient exam preparation} %Project Name, Location Name
         {Jun 2025 - Present} %Event Dates
-        {} %Additional details
+        {\href{https://pastexam.nctucsunion.me/}{Link} \textbar{} \href{https://github.com/NCTUCSUnion/pastexam}{GitHub}} %Additional details
         \vspace{-1.0mm}
         \resumeItemListStart
-            \item {Re-architected and rebuilt the legacy exam archive into a scalable full-stack system using Vue, FastAPI, and MinIO.}
-            \item {Deployed and operated the platform on a production VPS, serving 3,000+ users with over 28,000 exam downloads.}
-            \item {Implemented CI/CD pipelines with linting, unit, and end-to-end tests, enabling automated builds and deployments.}
+            \item {Re-architected the legacy exam archive into a full-stack platform using Vue 3, FastAPI, and MinIO storage.}
+            \item {Operated production services on a Linux VPS, reliably serving 3,000+ active users with 28,000+ exam downloads.}
+            \item {Engineered a retrieval and prompt pipeline with Google GenAI to generate tailored mock exams from course archives.}
         \resumeItemListEnd
     \vspace{-2.0mm}
 
+    \resumeProject
+        {AdaFreeU: Adaptive FreeU Parameter Prediction for Diffusion Models} %Project Name
+        {An adaptive framework for optimizing FreeU parameters in diffusion models} %Project Name, Location Name
+        {Apr 2026 - Jun 2026} %Event Dates
+        {\href{https://projects.userwei.com/project/30f0241a7c30a009}{Link} \textbar{} \href{https://github.com/gainsborourse/NYCU_DL-Final-Project}{GitHub}} %Additional details
+        \vspace{-1.0mm}
+        \resumeItemListStart
+            \item {Developed a Gaussian policy for adaptive FreeU parameter prediction from text and image features.}
+            \item {Trained the policy with reward-weighted learning to prioritize high-reward parameter configurations.}
+        \resumeItemListEnd
+    \vspace{-2.0mm}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
@@ -227,11 +243,14 @@
 \section{\textbf{Achievements}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
-    \resumePOR{Academic Achievements Awards} % Award
+    \resumePOR{Academic Achievement Awards} % Award
         {(Ranked 1st in class)} % Event
         {Fall 2025, Spring 2024} %Event Year
+    \resumePOR{ICPC Asia Taoyuan Regional Programming Contest} % Award
+        {Bronze Award} % Event
+        {Oct 2023} %Event Year
     \resumePOR{NSTC University Student Research Project} % Award
-        {Recipient of National Research Grant} % Event
+        {National Research Grant Recipient} % Event
         {Jul 2025 - Feb 2026} %Event Year
     \resumePOR{Department Capstone Project Competition} % Award
         {Merit Award (Top 10\%)} % Event
@@ -239,9 +258,6 @@
     \resumePOR{Foundation Academic Course Award} % Award
         {Digital Circuits \& Computer Organization (Top 5\%)} % Event
         {Spring 2024} %Event Year
-    \resumePOR{ICPC Asia Taoyuan Regional Programming Contest} % Award
-        {Bronze Award} % Event
-        {Oct 2023} %Event Year
 \resumeSubHeadingListEnd
 \vspace{-5mm}
 
@@ -250,13 +266,13 @@
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
     \resumePOR{Teaching Assistant} % Position
-        {\href{https://timetable.nycu.edu.tw/?r=main/crsoutline\&Acy=114\&Sem=2\&CrsNo=515612\&lang=zh-tw}{CCNA}, \href{https://timetable.nycu.edu.tw/?r=main/crsoutline\&Acy=113\&Sem=2\&CrsNo=515511\&lang=zh-tw}{Computer Organization}} %Club,Event
-        {Feb 2025 - Present} %Tenure Period
+        {CCNA, Computer Organization} %Club,Event
+        {Feb 2025 - Jun 2026} %Tenure Period
     \resumePOR{Development Team Leader} % Position
-        {\href{https://github.com/Official-Meichu-Hackathon}{Meichu Hackathon}} %Club,Event
+        {Meichu Hackathon} %Club,Event
         {Nov 2024 - Oct 2025} %Tenure Period
     \resumePOR{Frontend Training Program Mentor} % Position
-        {\href{https://gdg.community.dev/gdg-on-campus-national-yang-ming-chiao-tung-university-hsinchu-city-taiwan/}{NYCU Google Developer Groups}} %Club,Event
+        {NYCU Google Developer Groups} %Club,Event
         {Sep 2024 - Jun 2025} %Tenure Period
 \resumeSubHeadingListEnd
 \vspace{-5mm}
@@ -265,11 +281,11 @@
 %-----------Technical skills-----------------
 \section{\textbf{Technical Skills}}
 \resumeSubHeadingListStart
-    \resumeSkill{Languages}{C, C++, Python, Java, Kotlin, JavaScript, Go, Verilog, Bash}
-    \resumeSkill{Web}{Vue.js, Next.js, React, Tailwind CSS, FastAPI, Flask}
+    \resumeSkill{Languages}{C++, Python, Kotlin, Java, C, JavaScript, Bash, Verilog, Go, Rust}
+    \resumeSkill{Systems \& DevOps}{Linux, Docker, Kubernetes, Proxmox VE, Nginx, Postfix, Dovecot, Slurm}
     \resumeSkill{Databases \& Storage}{PostgreSQL, MySQL, Redis, MinIO (S3)}
-    \resumeSkill{Systems \& DevOps}{Linux, Docker, Kubernetes, Nginx, Proxmox VE, Slurm, Postfix, Dovecot}
-    \resumeSkill{Tools}{Git, Makefile, LaTeX, Markdown}
+    \resumeSkill{Tools}{Git, Gradle, CMake, Make, LaTeX, Markdown}
+
 \resumeSubHeadingListEnd
 \vspace{-16pt}
 
