@@ -1,6 +1,6 @@
 ## About
 
-I'm a third-year undergraduate student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Tsung-Tai Yeh](https://people.cs.nycu.edu.tw/~ttyeh/) and [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/).
+I'm a fourth-year undergraduate student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Tsung-Tai Yeh](https://people.cs.nycu.edu.tw/~ttyeh/) and [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/).
 
 For more about me, please visit my [profile](https://profile.userwei.com).
 
